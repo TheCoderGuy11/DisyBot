@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+	<title>
+		Sign-Up
+	</title>
+	<link rel="stylesheet" type="text/css" href="../css/sign.css">
+</head>
+<body>
+		<div class="container">
+			<div id="sign">
+			<h1> Sign Up</h1>
+			<form action="/scripts/sign.py" method="POST">
+			<input type="text" name="fname" id="value" placeholder="Full-name" maxlength="35" reuired /></br>
+			<input type="email" name="email" id="email" placeholder="Email" required /></br>
+			<input type="text" oninput="this.value=this.value.replace(/[^0-9.]/g,''); this.vlaue=this.value.replace(/(\..*)\./g,'$1');" name="mobile" id="mobile" placeholder="Mobile" maxlength="10" pattern=".{8,}" title="enter exactly 10 digit number" reuired /></br>
+			<input type="password" name="password" placeholder="Password" id="password" pattern=".{8,}" title="Minimum Eight alphanumeric or special symbols  is required" required /></br>
+			Gender:-			
+			<input type="radio" name="gender" vlaue="male" id="male" required>Male</input>
+			<input type="radio" name="gender" vlaue="female" id="female" required>Female</input>		</br>
+			<input type="date"  name="age"  placeholder="DOB" id="age" required/>	
+			</br><input type="submit" name="submit" value="Sign Up" />
+			</form>		
+		</div>
+		</div>
+</body>
+</html>

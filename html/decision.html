@@ -1,0 +1,54 @@
+<!docktype html>
+<html>
+<head>
+	<link href="../css/decision.css" type="text/css" rel="stylesheet" />
+	<title>
+		explore
+	</title>
+</head>
+<body>	
+	<div class="heading">		
+		<div id="right">
+			<img class="pat" src="../photo/8.png" >
+			<p class="pat-content"><b> Patient</b></p></br></br>
+			<a href="#id01" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="pat-btn1">Login</a></br>
+			<p class="po">Or</p></br>
+			<a href="signup.html" class="pat-btn2">SignUp</a></br>
+		</div>
+		<div id="left">
+			<img class="doc" src="../photo/10.png" >
+			<p class="doc-content"><b> Doctor</b></p></br></br>
+			<a href="doclogin.html" class="doc-btn1">Login</a></br>
+			<p class="do">Or</p></br>
+			<a href="docsign.html" class="doc-btn2">SignUp</a>	
+		</div>
+	</div>	
+	<div id="id01" class="modal">
+  		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span> 
+ 		 <form class="modal-content animate" action="/scripts/patlogin.py" method="POST"> 
+    			<div class="container"> 
+				<p class="loginp">Patient Login :-</p> 
+				<hr>
+      				<input type="text" oninput="this.value=this.value.replace(/[^0-9.]/g,''); this.vlaue=this.value.replace(/(\..*)\./g,'$1');" name="mobile" id="mobile" placeholder="Mobile" maxlength="10" pattern=".{8,}" title="enter exactly 10 digit number" reuired /></br>
+				<input type="password" name="password" placeholder="Password" id="password" pattern=".{8,}" title="Minimum Eight alphanumeric or special symbols  is required" required /></br>	<div class="clearfix"> 
+					<input type="submit" class="loginbtn" name="submit" id="submit" value="Login" /> 
+        				<input type="reset" class="resett" name="clear" id="clear" value="Clear" />			
+      				</div> 
+   		 	</div> 
+  		</form> 
+	</div> 
+  
+<script> 
+  
+var modal = document.getElementById('id01'); 
+  
+  
+window.onclick = function(event) { 
+    if (event.target == modal) { 
+        modal.style.display = "none"; 
+    } 
+} 
+</script> 
+  
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+	<title>
+		OTP Verification
+	</title>
+	<link rel="stylesheet" type="text/css" href="../css/otp.css">
+</head>
+<body>
+		<div class="container">
+			<div id="sign">
+			<h1> OTP Verification</h1>
+			<form action="/scripts/otp.py" method="POST">
+			<input type="text" oninput="this.value=this.value.replace(/[^0-9.]/g,''); this.vlaue=this.value.replace(/(\..*)\./g,'$1');" name="otp" id="otp" placeholder="Enter OTP" maxlength="4" pattern=".{4,}" title="enter exactly 4 digit number" reuired /></br>
+			</br><input type="submit" name="submit" value="Sign Up" />
+			<input type="reset" name="clear" vlaue="Clear" />			
+			</form>		
+		</div>
+		</div>
+</body>
+</html>
