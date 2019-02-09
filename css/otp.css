@@ -1,0 +1,87 @@
+*{
+	margin:0;
+	padding:0;
+	font-size:16px;
+	font-family:sans-serif;
+	font-weight:300;
+	color:black;
+	max-width:1500px;
+}
+
+body{
+	background:url(../photo/3.jpg);
+	background-position:center;
+	background-size:cover;
+
+}
+
+.container{
+	color:#efefef;
+	height:300px;
+	width:300px;
+	position:center;
+	margin:11% auto;
+	box-shadow:3px 6px 8px rgba(0,0,0,1);
+	max-width:1500px;
+}
+
+#sign{
+	padding:40px;
+	font-size:15px;
+	position:center;
+	height:300px;
+	border:0.5px solid black;
+	top:0;
+	left:0;
+	box-sizing: border-box;
+	max-width:1500px;
+}
+
+h1{
+	margin:0 0 20px 0;
+	font-weight:300;
+	font-size:45px;
+}
+
+/*hr{
+	width:125px;
+	height:1px;
+	background:#ddd;
+}*/
+input{
+	margin-bottom:20px;
+	box-sizing:border-box;
+	background:transparent;
+	color:black;
+	border:none;
+	outline:none;
+	border-bottom:3px solid black;
+	font-family:sans-serif;
+	transition:0.2s ease;
+	font-size:15px;
+	font-weight:400;
+	padding:4px;
+	height:20px;
+}
+
+input[type="submit"],input[type="reset"]{
+	margin-bottom:28px;
+	margin-left:19px;	
+	width:80px;
+	height:32px;
+	background:#f44336;
+	border:none;
+	border-radius:2px;
+	color:#fff;
+	font-weight:500;
+	text-transform:uppercase;
+	transition:0.2s ease;
+	cursor:pointer;
+}
+input[type="submit"]:hover,input[type="reset"]:hover,input[type="submit"]:focus,input[type="reset"]:focus{
+	background:#ff5722;
+	transition:0.2s ease;
+}
+
+
+
