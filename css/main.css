@@ -1,0 +1,14 @@
+*{
+	margin:0;
+	padding:0;
+	max-width:1550px;
+}
+
+body{
+	background:url(../photo/7.jpg);
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	height:100vh;
+	width:100vw;
+}
